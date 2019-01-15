@@ -1,8 +1,3 @@
-/* font-family: 'Coming Soon', cursive;
-font-family: 'Grand Hotel', cursive;
-font-family: 'Rancho', cursive;
-font-family: 'Noto Sans', sans-serif; */
-
 body {
     background-image: url("../images/train-station.jpg");
     background-size: cover;
@@ -110,7 +105,7 @@ input {
     margin-bottom: 10px;
 }
 
-/* .form-control {
+.form-control {
     font-style: italic;
-    color: lightgray;
-} */
+    color:black;
+}
