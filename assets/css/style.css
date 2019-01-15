@@ -1,0 +1,116 @@
+/* font-family: 'Coming Soon', cursive;
+font-family: 'Grand Hotel', cursive;
+font-family: 'Rancho', cursive;
+font-family: 'Noto Sans', sans-serif; */
+
+body {
+    background-image: url("../images/train-station.jpg");
+    background-size: cover;
+}
+
+.topContainer {
+    max-width: 960px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    clear: both;
+    background-color: white;
+}
+
+.bottomContainer {
+    max-width: 460px;
+    float: right;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    clear: both;
+    font-family: 'Francois One', sans-serif;
+    background: lightgray;
+    background: linear-gradient(to right, lightgray , transparent);;
+    color: darkslategray;
+}
+
+#jumbotron {
+    background: transparent;
+    max-width: 100%;
+    text-align: center;
+    padding: 20px;
+    color: black;
+    font-family: 'Francois One', sans-serif;
+    margin: 0 0 20px 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: 'Francois One', sans-serif;
+    text-align: center;
+  }
+
+td, th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+  }
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+tr {
+      font-size: 14px;
+  }
+
+.topCard, .bottomCard {
+    max-width: 960px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    clear: both;
+    font-family: 'Francois One', sans-serif;
+}
+
+#boxHeaderT {
+    background: linear-gradient(to right,lightgray, transparent);;
+    font-size: 24px;
+    margin-bottom: 0px;
+    border: 3px solid black;
+    color: darkslategray;
+}
+
+#addTrain {
+    background: linear-gradient(to right,lightgray, transparent);;
+    font-size: 24px;
+    margin-bottom: 0px;
+    margin-left: 500px;
+    border: 3px solid black;
+    color: darkslategray;
+    max-width: 500px;
+}
+
+#boxHeaderB {
+    background-color: lightgray;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 0px;
+}
+
+#submit{
+    width: 5em;  height: 3em;
+    margin-left: 10px;
+    border: 1px solid darkslategray;
+    background-color: darkslategray;
+}
+
+label {
+    margin-bottom: 0rem;
+    font-size: 20px;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+/* .form-control {
+    font-style: italic;
+    color: lightgray;
+} */
