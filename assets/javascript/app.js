@@ -39,8 +39,6 @@ $(document).ready(function () {
         $("#frequency").val("");
     });
 
-
-
     // database.ref().push({
     //     name: trainName,
     //     destination: destination,
@@ -72,32 +70,31 @@ $(document).ready(function () {
         var currentTime = moment();
         console.log("Current Time: " + moment(currentTime).format("hh:mm"));
 
-        //post current time to jumbotron for reference
 
         $("#currentTime").html("Current Time: " + moment(currentTime).format("hh:mm"));
 
-        //find the difference between the first train time and the current time
+        //difference between the first train time and the current time
 
         var timeDiff = moment().diff(moment(trainTimeConverted), "minutes");
         console.log("Difference In Time: " + timeDiff);
 
-        //find the time apart by finding the remainder of the time difference and the frequency - use modal to get whole remainder number
+        //find the time apart by finding the remainder of the time difference and the frequency
 
         var timeRemainder = timeDiff % frequency;
         console.log(timeRemainder);
 
-        //find the minutes until the next train
+        //minutes until the next train
 
         var nextTrainMin = frequency - timeRemainder;
         console.log("Minutes Till Train: " + nextTrainMin);
 
-        //find the time of the next train arrival
+        //time of the next train arrival
 
         var nextTrainAdd = moment().add(nextTrainMin, "minutes");
         var nextTrainArr = moment(nextTrainAdd).format("hh:mm a");
         console.log("Arrival Time: " + nextTrainArr);
 
-        //prepend all information for train data submitted by user
+        //prepend all information for train data 
 
         $("#trainTable").append("<tr><td>" + trainName + "</td><td>" + destination + "</td><td>" + frequency + "</td><td>" + nextTrainArr + "</td><td>" + nextTrainMin + "</td><tr>");
 
